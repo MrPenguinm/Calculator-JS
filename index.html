@@ -1,63 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- main-css -->
-     <link rel="stylesheet" href="style.css">
-       <!-- icon -->
-        <link rel="icon" href="pe.icon">
-<title>🐧</title>
-</head>
-<body>
-  <!-- Start -->
-  <div class="container">
-    <!--  -->
-    <div class="calc">
-        <div class="im">
-            <img src="1.jpg" alt="" id="img">
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon -->
+    <link rel="icon" href="pe.icon" />
+    <title>🐧</title>
+  </head>
+  <body>
+    <!---->
+    <div class="container">
+      <div class="calculator-Box">
+        <div class="img-Box">
+          <img src="1.jpg" alt="" id="img" />
         </div>
         <!--  -->
         <form>
-
-            <div class="display">
-                <input type="text" id="display">
-            </div>
-
-            <div>
-                <input type="button" value="AC" onclick="playSound('1.mp3'); clearDisplay()" >
-                <input type="button" value="DE" onclick="playSound('1.mp3'); deleteLast()">
-                <input type="button" value="." onclick="playSound('1.mp3'); appendValue('.');">
-                <input type="button" value="/" onclick="playSound('1.mp3'); appendValue('/');">
-            </div>
-            <div>
-                <input type="button" value="7" onclick="playSound('1.mp3'); appendValue('7');">
-                <input type="button" value="8" onclick="playSound('1.mp3'); appendValue('8');">
-                <input type="button" value="9" onclick="playSound('1.mp3'); appendValue('9');">
-                <input type="button" value="*" onclick="playSound('1.mp3'); appendValue('*');">
-            </div>
-            <div>
-                <input type="button" value="4" onclick="playSound('1.mp3'); appendValue('4');">
-                <input type="button" value="5" onclick="playSound('1.mp3'); appendValue('5');">
-                <input type="button" value="6" onclick="playSound('1.mp3'); appendValue('6')">
-                <input type="button" value="-" onclick="playSound('1.mp3'); appendValue('-')">
-            </div>
-            <div>
-                <input type="button" value="1" onclick="playSound('1.mp3'); appendValue('1')">
-                <input type="button" value="2" onclick="playSound('1.mp3'); appendValue('2')">
-                <input type="button" value="3" onclick="playSound('1.mp3'); appendValue('3')">
-                <input type="button" value="+" onclick="playSound('1.mp3'); appendValue('+')">
-            </div>
-            <div>
-                <input type="button" value="00" onclick="playSound('1.mp3'); appendValue('00')">
-                <input type="button" value="0" onclick="playSound('1.mp3'); appendValue('0')">
-                <input type="button" value="=" onclick="playSound('2.mp3'); calculateResult()" style="width: 124px;">
-            </div>
+          <div class="display">
+            <input type="text" id="display" />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="AC"
+              onclick="playSound('1.mp3'); clearDisplay()" />
+            <input
+              type="button"
+              value="DE"
+              onclick="playSound('1.mp3'); deleteLast()" />
+            <input
+              type="button"
+              value="."
+              onclick="playSound('1.mp3'); appendValue('.');" />
+            <input
+              type="button"
+              value="/"
+              onclick="playSound('1.mp3'); appendValue('/');" />
+          </div>
+          <!--  -->
+          <div>
+            <input
+              type="button"
+              value="7"
+              onclick="playSound('1.mp3'); appendValue('7');" />
+            <input
+              type="button"
+              value="8"
+              onclick="playSound('1.mp3'); appendValue('8');" />
+            <input
+              type="button"
+              value="9"
+              onclick="playSound('1.mp3'); appendValue('9');" />
+            <input
+              type="button"
+              value="*"
+              onclick="playSound('1.mp3'); appendValue('*');" />
+          </div>
+          <!--  -->
+          <div>
+            <input
+              type="button"
+              value="4"
+              onclick="playSound('1.mp3'); appendValue('4');" />
+            <input
+              type="button"
+              value="5"
+              onclick="playSound('1.mp3'); appendValue('5');" />
+            <input
+              type="button"
+              value="6"
+              onclick="playSound('1.mp3'); appendValue('6')" />
+            <input
+              type="button"
+              value="-"
+              onclick="playSound('1.mp3'); appendValue('-')" />
+          </div>
+          <!--  -->
+          <div>
+            <input
+              type="button"
+              value="1"
+              onclick="playSound('1.mp3'); appendValue('1')" />
+            <input
+              type="button"
+              value="2"
+              onclick="playSound('1.mp3'); appendValue('2')" />
+            <input
+              type="button"
+              value="3"
+              onclick="playSound('1.mp3'); appendValue('3')" />
+            <input
+              type="button"
+              value="+"
+              onclick="playSound('1.mp3'); appendValue('+')" />
+          </div>
+          <!--  -->
+          <div>
+            <input
+              type="button"
+              value="00"
+              onclick="playSound('1.mp3'); appendValue('00')" />
+            <input
+              type="button"
+              value="0"
+              onclick="playSound('1.mp3'); appendValue('0')" />
+            <input
+              type="button"
+              value="="
+              onclick="playSound('2.mp3'); calculateResult()"
+              style="width: 124px" />
+          </div>
         </form>
+      </div>
     </div>
-</div>
-<!--  -->
-<!-- main-js -->
- <script src="main.js"></script>
-</body>
+    <!--  -->
+    <!-- main-js -->
+    <script src="main.js"></script>
+  </body>
 </html>
