@@ -1,8 +1,10 @@
 // Get The Display Element
 const display = document.getElementById("display");
+let resultDisplay = false;
 // Function to clear the display => AC
 function clearDisplay() {
   display.value = "";
+  resultDisplay = false;
 }
 // Function to delete the last character => Del
 function deleteLast() {
@@ -13,7 +15,14 @@ function deleteLast() {
 
 // Function to append the value to the display
 function appendValue(value) {
+  if (display.value === "❌") {
+    display.value = "";
+  }
+  if (resultDisplay && !isNaN(value)) {
+    display.value = "";
+  }
   display.value += value;
+  resultDisplay = false;
 }
 
 // Function to calculate the result
@@ -37,6 +46,7 @@ function calculateResult() {
     }
 
     display.value = result;
+    resultDisplay = true;
   } catch (error) {
     display.value = "❌";
   }
